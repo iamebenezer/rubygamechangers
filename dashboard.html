@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DASHBOARD</title>
+  <link rel="stylesheet" type="text/css" href="dashboard.css">
+  <link rel="icon" href=" images/LOGO.jpg" type="image/icon type">
+  <script type="dashboard.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <div class="menu-column" >
+   
+    <div class="profile"><img src="https://placeimg.com/100/100/face"/></div>
+  </div>
+  <div class="summary-column">
+    <div class="profile-img" id="profileImage"><img src="images/ogbole.jpg"/>
+      <div class="name">Favour <br> Ogbole</div>
+    </div>
+    <div class="statistics" >
+      <h2>summary</h2>
+      <div class="age"><span class="title title-age">13</span></div>
+      <div class="weight"><span class="title title-weight">49.5 kg</span></div>
+      <div class="float-none"></div>
+      <div class="height">
+        <div class="icon"></div>
+        <div class="data"><span>121 cm</span></div>
+      </div>
+      <div class="bmi"><span class="title title-bmi">20.4</span></div>
+      <div class="fat"><span class="title title-fat">11<span class="percentage">%</span></span></div>
+      <div class="float-none"></div>
+      <h2 class="allergies"></h2>
+      <div class="row">
+        <div class="severity">
+          <div class="fill"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="severity">
+          <div class=></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content-column">
+    <div class="header-container" id="headerContainer">
+      <div class="nav">
+        <div class="content">
+          <h2>Dashboard</h2>
+          <p>
+             Hi <span class="name">Favour</span>, it seems you are in</p><span class="shape score">Good</span><span class="shape"> shape</span>
+        </div>
+      </div>
+      <a href="index.html"><button style="position: relative; top: 43px; background: lightblue; border: none; color: #000; border-radius: 5px; padding:8px; margin-left: 10%;">Home</button></a>
+      <a href="dashboard2.html"><button style="position: relative; top: 43px; background: lightblue; border: none; color: #000; border-radius: 5px; padding:8px; margin-left: 2%;">Smart Skating</button></a>
+      <div class="select-boxes">
+        <div class="content">
+          <div class="select-wrapper">
+            
+          </div>
+          <div class="select-wrapper">
+            <select>
+              <option>Today</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="float-none"></div>
+      <div class="graph">
+        <canvas id="bpChart" style="position: relative; z-index: 100;"></canvas>
+      </div>
+    </div>
+    <div class="split-container">
+      <div class="split">
+        <h3>Temperature</h3>
+        <div class="temperature">36.8</div>
+        <img src="  images/tem.jpg" width="45%" height="30%">
+        <div class="split-graph">
+          <canvas id="temperatureGraph"></canvas>
+        </div>
+      </div>
+      <div class="split">
+        <h3>Calories burned</h3>
+        <div class="calories">537</div>
+        <img src="images/cal.gif" width="45%" height="30%">
+        <div class="split-graph">
+          <canvas id="calorieGraph"></canvas>
+        </div>
+      </div>
+      <div class="split">
+        
+        <h3>Heart rate</h3>
+        <div class="heart-rate">60</div>
+        <img src="  images/heartbeat.gif" width="45%" height="30%">
+        <img src=" images/hmonitor.gif" width="45%" height="30%">
+        <div class="split-graph">
+          <canvas id="heartRateGraph"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="sleep">
+      <div class="totals">
+        <div class="collective"><span class=""></span><span class="minutes">37</span>
+          <p></p>
+        </div>
+        <div class="split first">
+          <p></p>
+        </div>
+        <div class="split">
+          <p></p>
+        </div>
+      </div>
+      <div class="sleep-graph">
+        <div class="sleep-graph-container">
+          <h2>Favour Ogbole</h2>
+          <div class="sleep-select-wrapper">
+            <select>
+              <option value="today">Today</option>
+            </select>
+            
+          </div>
+          <div class="chart-container">
+            <video controls loop autoplay
+            src=" images/VID-20210415-WA0038.mp4"
+            poster=""
+            width="250" height="500">
+           
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="float-none"></div>
+    <div class="split-container">
+      <div class="split bottom">
+        <h2></h2>
+        <div class="appointments">
+          <div class="calendar-container">
+            <div class="calendar">13<span class="date">th</span><span class="month">April</span></div>
+            <div class="content">
+              <table class="appointment-table">
+                <tr>
+                  <td id="time"><img src=" images/flip.gif" width="100%"></td>
+                </tr>
+                <tr>
+                  <td id="title"></td>
+                </tr>
+                <tr>
+                  <td id="name"></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="split bottom">
+        <h2>COUNTER</h2>
+       <img src=" images/counter.gif" width="50%">
+      </div>
+      <div class="split bottom">
+        <div id="map"></div>
+        <div class="map-overlay">
+          <h2>Skips</h2><span class="steps">420</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="search-column">
+    <div class="search-container"><img src="https://svgshare.com/i/56w.svg"/>
+      <input type="text" placeholder="Search"/>
+    </div>
+    <div class="activity-list">
+      <h3>Leaderboard</h3>
+      <div class="activity">
+        <div class="image-container"><img src="https://placeimg.com/40/40/face"/></div>
+        <div class="text"><span class="name">Ivy Obodo </span><span class="time-ago">576</span></div>
+      </div>
+      <div class="activity">
+        <div class="image-container"><img src="https://placeimg.com/40/40/person"/></div>
+        <div class="text"><span class="name"> Favour Ogbole  </span><span class="time-ago">423</span></div>
+      </div>
+      <div class="activity">
+        <div class="image-container"><img src="https://placeimg.com/40/40/face"/></div>
+        <div class="text"><span class="name">Victory </span>.<span class="time-ago">298</span></div>
+      </div>
+      <div class="activity">
+        <div class="image-container"><img src="https://placeimg.com/40/40/person"/></div>
+        <div class="text"><span class="name">Ogbole Gabriel</span><span class="time-ago">257</span></div>
+      </div>
+      <div class="activity">
+        <div class="image-container"><img src="https://placeimg.com/40/40/person"/></div>
+        <div class="text"><span class="name"> Ebenezer Abegunde</span><span class="time-ago">220</span></div>
+      </div>
+      <div class="your-doctors">
+        <h3></h3>
+        <div class="doctor">
+          <div class="image-container"><img src="https://placeimg.com/40/40/person"/></div>
+          <div class="text"><span class="name-large">John Rahael</span><span class="title">212</span></div>
+        </div>
+        <div class="doctor">
+          <div class="image-container"><img src="https://placeimg.com/40/40/face"/></div>
+          <div class="text"><span class="name-large">Ugwu Maxwell </span><span class="title">187</span></div>
+        </div>
+        <div class="doctor">
+          <div class="image-container"><img src="https://placeimg.com/40/40/person"/></div>
+          <div class="text"><span class="name-large">Daniel </span><span class="title">185</span></div>
+        </div>
+        <a href="index.html"><button class="find-doctor" style="margin-right: 500px";>HOME</button></a>
+ 
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
