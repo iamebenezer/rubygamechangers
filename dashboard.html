@@ -162,10 +162,12 @@
       <div class="split bottom">
         <div id="map"></div>
         <div class="map-overlay">
-      <h1>Counters with slow-down effect</h1>
-<h2 id="myObj1">0</h2>
-
+      <h1 style="color:#000";>Counters with slow-down effect</h1>
+<h2 id="myObj1" style="color:#000";>0</h2>
+<h2 id="myObj2">0</h2>
+<h2 id="myObj3">0</h2>
 <p><button id="rerun">Re-run counters</button></p>
+
         </div>
       </div>
     </div>
@@ -222,7 +224,7 @@
     <script>
     class Counter {
         constructor(startDelay, endDelay) {
-            this.startDelay = startDelay || 423;
+            this.startDelay = startDelay || 50;
             this.endDelay = endDelay || this.startDelay;
         }
         runCounter(objID, start, finish) {
@@ -251,11 +253,18 @@
     }
 
     let MyCounter1 = new Counter(5,250);
-    MyCounter1.runCounter("myObj1", 0, 423);
+    MyCounter1.runCounter("myObj1", 0, 50);
+
+    let MyCounter2 = new Counter(50,250);
+    MyCounter2.runCounter("myObj2", 0, 12);
+
+    let MyCounter3 = new Counter(1000);
+    MyCounter3.runCounter("myObj3", 0, 5);
 
 document.getElementById("rerun").addEventListener("click", function() {
     MyCounter1.runCounter("myObj1", 0, 50);
-  
+    MyCounter2.runCounter("myObj2", 0, 12);
+    MyCounter3.runCounter("myObj3", 0, 5);
 });
   </script>
 </html>
