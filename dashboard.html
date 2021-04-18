@@ -172,7 +172,7 @@ b {
       <div class="split bottom">
         <div id="map"></div>
         <div class="map-overlay">
-          <div id="users" class="skip">Skips: <b counter="0">0</b></div>
+          <div id="user" class="skip">Skips:<b counter="0">0</b></div>
         </div>
       </div>
     </div>
@@ -224,8 +224,8 @@ b {
   </div>
 </div>
   <script>
-function update_users_count() {
-    $('#users b').animate({
+function update_user_count() {
+    $('#user b').animate({
         counter: 423
     }, {
         duration: 100000,
@@ -233,7 +233,7 @@ function update_users_count() {
         step: function(now) {
             $(this).text(Math.ceil(now));
         },
-        complete: update_users_count
+        complete: update_user_count
     });
 };
 
