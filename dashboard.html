@@ -164,8 +164,6 @@
         <div class="map-overlay">
       <h1 style="color:#000"; font-size:17px; font-family:arail ;>Skips</h1>
 <h2 id="myObj1" style="color:#000";>0</h2>
-<h2 id="myObj2">0</h2>
-<h2 id="myObj3">0</h2>
 
 
         </div>
@@ -255,11 +253,7 @@
     let MyCounter1 = new Counter(5,250);
     MyCounter1.runCounter("myObj1", 0, 50);
 
-    let MyCounter2 = new Counter(50,250);
-    MyCounter2.runCounter("myObj2", 0, 12);
-
-    let MyCounter3 = new Counter(1000);
-    MyCounter3.runCounter("myObj3", 0, 5);
+    
 
 document.getElementById("rerun").addEventListener("click", function() {
     MyCounter1.runCounter("myObj1", 0, 50);
