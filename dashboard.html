@@ -162,9 +162,7 @@
       <div class="split bottom">
         <div id="map"></div>
         <div class="map-overlay">
-      <h1 style="color:#000"; font-size:17px; font-family:arail ;>Skips</h1>
-<h2 id="myObj1" style="color:#000";>0</h2>
-
+  <h2>Skips</h2><span class="steps">420</span>
 
         </div>
       </div>
@@ -219,40 +217,6 @@
 
 
 </body>
-    <script>
-    class Counter {
-        constructor(startDelay, endDelay) {
-            this.startDelay = startDelay || 423;
-            this.endDelay = endDelay || this.startDelay;
-        }
-        runCounter(objID, start, finish) {
-            if (isNaN(start) || isNaN(finish)) {
-                console.error("One of the count parameters was not a number. Please check the method call.");
-                return;
-            }
-            if (finish - start === 0) {
-                console.error("Finish count is the same as start count. Please use different numbers.");
-                return;
-            }
-            const obj = document.getElementById(objID);
-            let num = start;
-            let delay = this.startDelay;
-            let delayOffset = Math.floor((this.endDelay - this.startDelay) / (finish - start));
-            let timerStep = function() {
-                if (num <= finish) {
-                    obj.innerHTML = num;
-                    delay += delayOffset;
-                    num += 1;
-                    setTimeout(timerStep, delay);
-                }
-            }
-            timerStep();
-        }
-    }
-
-    let MyCounter1 = new Counter(5,250);
-    MyCounter1.runCounter("myObj1", 423, 423);
-
     
-</script>
+
 </html>
