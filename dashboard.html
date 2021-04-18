@@ -222,7 +222,7 @@
     <script>
     class Counter {
         constructor(startDelay, endDelay) {
-            this.startDelay = startDelay || 50;
+            this.startDelay = startDelay || 423;
             this.endDelay = endDelay || this.startDelay;
         }
         runCounter(objID, start, finish) {
@@ -251,14 +251,12 @@
     }
 
     let MyCounter1 = new Counter(5,250);
-    MyCounter1.runCounter("myObj1", 0, 50);
+    MyCounter1.runCounter("myObj1", 0, 423);
 
     
 
 document.getElementById("rerun").addEventListener("click", function() {
-    MyCounter1.runCounter("myObj1", 0, 50);
-    MyCounter2.runCounter("myObj2", 0, 12);
-    MyCounter3.runCounter("myObj3", 0, 5);
-});
+    MyCounter1.runCounter("myObj1", 0, 423);
+
   </script>
 </html>
