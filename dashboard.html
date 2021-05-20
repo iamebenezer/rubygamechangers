@@ -7,11 +7,21 @@
   <script type="dashboard.js"></script>
 </head>
  <link href= "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<style>
+  .counter{
+    font-size: 10px;
 
-<body >
-
+  }
+  .counter{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+</style>
+<body style="margin-right: 24px;">
+ 
 <div class="container">
-  <div class="menu-column" >
+  <div class="menu-column"  >
    
     <div class="profile"><img src="https://placeimg.com/100/100/face"/></div>
   </div>
@@ -19,10 +29,12 @@
     <div class="profile-img" id="profileImage"><img src="images/ogbole.jpg"/>
       <div class="name">Favour <br> Ogbole</div>
     </div>
-    <div class="statistics" >
+    <div class="statistics"  >
       <h2>summary</h2>
+     <!-- <div class="weight=="><span class="title title-gen">Gender: Female</span></div>-->
       <div class="age"><span class="title title-age">13</span></div>
       <div class="weight"><span class="title title-weight">49.5 kg</span></div>
+      
       <div class="float-none"></div>
       <div class="height">
         <div class="icon"></div>
@@ -32,6 +44,40 @@
       <div class="fat"><span class="title title-fat">11<span class="percentage">%</span></span></div>
       <div class="float-none"></div>
       <h2 class="allergies"></h2>
+      <button id="myBtn" style="border: none; border-radius: 8px; font-size: 18px; padding: 6px; margin-left: 34px; background:linear-gradient(#5a89b1, #42656f); color: #fff; font-weight:470;" onclick="myFunction()">READ MORE</button>
+      <div id="dots">
+      <div class="age"><span class="title title-age">13</span></div>
+      <div class="weight"><span class="title title-weight">49.5 kg</span></div>
+      
+      <div class="float-none"></div>
+      <div class="height">
+        <div class="icon"></div>
+        <div class="data"><span>158 cm</span></div>
+      </div>
+      <div class="bmi"><span class="title title-bmi">20.4</span></div>
+      <div class="fat"><span class="title title-fat">11<span class="percentage">%</span></span></div>
+      <div class="float-none"></div>
+    </div>
+      
+
+      <script>
+      function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+      
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read "; 
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read more"; 
+          moreText.style.display = "inline";
+        }
+      }
+      </script>
+      
       <div class="row">
         <div class="severity">
           <div class="fill"></div>
@@ -53,8 +99,9 @@
              Hi <span class="name">Favour</span>, it seems you are in</p><span class="shape score">Good</span><span class="shape"> shape</span>
         </div>
       </div>
-      <a href="index.html"><button style="position: relative; top: 43px; background: lightblue; border: none; color: #000; border-radius: 5px; padding:8px; margin-left: 10%;">Home</button></a>
+      <a href="index.html"></a><button style="position: relative; top: 43px; background: lightblue; border: none; color: #000; border-radius: 5px; padding:8px; margin-left: 10%;">Home</button></a>
       <a href="dashboard2.html"><button style="position: relative; top: 43px; background: lightblue; border: none; color: #000; border-radius: 5px; padding:8px; margin-left: 2%;">Smart Skating</button></a>
+      <a href="dashboard3.html"><button style="position: relative; top: 43px; background: lightblue; border: none; color: #000; border-radius: 5px; padding:8px; margin-left: 2%;">Smart Tenis</button></a>
       <div class="select-boxes">
         <div class="content">
           <div class="select-wrapper">
@@ -92,7 +139,7 @@
       <div class="split">
         
         <h3>Heart rate</h3>
-        <div class="heart-rate">60</div>
+        <div class="heart-rate">72</div>
         <img src="  images/heartbeat.gif" width="45%" height="30%">
         <img src=" images/hmonitor.gif" width="45%" height="30%">
         <div class="split-graph">
@@ -102,13 +149,19 @@
     </div>
     <div class="sleep">
       <div class="totals">
-        <div class="collective"><span class=""></span><span class="minutes">37</span>
+        <div class="collective"><span class=""></span><span class="minutes">2:00</span>
+          
+
+
+
+
           <p></p>
         </div>
         <div class="split first">
           <p></p>
         </div>
         <div class="split">
+          
           <p></p>
         </div>
       </div>
@@ -119,7 +172,8 @@
             <select>
               <option value="today">Today</option>
             </select>
-            
+            <h2>Skips</h2><span class="steps"></span>
+            <div class="counter" id="value">100</div>
           </div>
           <div class="chart-container">
             <video controls loop autoplay
@@ -141,7 +195,7 @@
             <div class="content">
               <table class="appointment-table">
                 <tr>
-                  <h6>height Jump</h6>
+                  <h6>height Of Jump</h6>
                   <td id="time"><img src=" images/flip.gif" width="100%"></td>
                 </tr>
                 <tr>
@@ -156,13 +210,15 @@
         </div>
       </div>
       <div class="split bottom">
-        <h2>COUNTER</h2>
-       <img src=" images/counter.gif" width="50%">
+        <h2 style="color: #fff; ">COUNTDOWN</h2>
+        <img src="images/countdown.gif" style="margin-left:19px; margin-top: 30px;"> 
       </div>
       <div class="split bottom">
         <div id="map"></div>
         <div class="map-overlay">
-  <h2>Skips</h2><span class="steps">420</span>
+          
+
+  <img src="images/counter2.gif" width="150%" height="90%" style="margin-top: 90px;">
 
         </div>
       </div>
@@ -172,7 +228,7 @@
     <div class="search-container"><img src="https://svgshare.com/i/56w.svg"/>
       <input type="text" placeholder="Search"/>
     </div>
-    <div class="activity-list">
+    <div class="activity-list"  style="width: 30%; margin: 0;">
       <h3>Leaderboard</h3>
       <div class="activity">
         <div class="image-container"><img src="https://placeimg.com/40/40/face"/></div>
@@ -180,11 +236,11 @@
       </div>
       <div class="activity">
         <div class="image-container"><img src="https://placeimg.com/40/40/person"/></div>
-        <div class="text"><span class="name"> Favour Ogbole  </span><span class="time-ago">423</span></div>
+        <div class="text"><span class="name"> Favour Ogbole  </span><span class="time-ago">220</span></div>
       </div>
       <div class="activity">
         <div class="image-container"><img src="https://placeimg.com/40/40/face"/></div>
-        <div class="text"><span class="name">Victory </span>.<span class="time-ago">298</span></div>
+        <div class="text"><span class="name">Victory Alamazie</span>.<span class="time-ago">298</span></div>
       </div>
       <div class="activity">
         <div class="image-container"><img src="https://placeimg.com/40/40/person"/></div>
@@ -202,11 +258,15 @@
         </div>
         <div class="doctor">
           <div class="image-container"><img src="https://placeimg.com/40/40/face"/></div>
+          <div class="text"><span class="name-large">Odumogwu Clement </span><span class="title">195</span></div>
+        </div>
+        <div class="doctor">
+          <div class="image-container"><img src="https://placeimg.com/40/40/face"/></div>
           <div class="text"><span class="name-large">Ugwu Maxwell </span><span class="title">187</span></div>
         </div>
         <div class="doctor">
           <div class="image-container"><img src="https://placeimg.com/40/40/person"/></div>
-          <div class="text"><span class="name-large">Daniel </span><span class="title">185</span></div>
+          <div class="text"><span class="name-large">Daniel Njila</span><span class="title">185</span></div>
         </div>
         <a href="index.html"><button class="find-doctor" style="margin-right: 500px";>HOME</button></a>
  
@@ -217,6 +277,25 @@
 
 
 </body>
+<script>
+  function animateValue(obj, start, end, duration) {
+  let startTimestamp = null;
+  const step = (timestamp) => {
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+    obj.innerHTML = Math.floor(progress * (end - start) + start);
     
+    if (progress < 5) {
+      window.requestAnimationFrame(step);
+    }
+  };
+  window.requestAnimationFrame(step);
+}
+
+
+const obj = document.getElementById("value");
+animateValue(obj, 0, 220, 5000);
+
+</script>    
 
 </html>
