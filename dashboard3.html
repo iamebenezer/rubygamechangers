@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Tenis Dashboard</title>
+</head>
+<script src="dashjs.js"></script>
+<link rel="stylesheet" href="dashcss.css">
+
+<body>
+    <div id="container">
+        <div id="sideMenu">
+          <h1>Game Report</h1>
+      
+          <ul class="menu">
+            <li>Smart Tennis</li>
+            <li>Dashboard</li>
+            <li>Wins <span class="notification">49</span></li>
+            <li>Lost <span class="notification">4</span></li>
+            
+          </ul>
+      
+          <ul class="menu">
+            <li>Account</li>
+            <li>Activity</li>
+            <li>Messages <span class="notification">3</span></li>
+          </ul>
+      
+          <ul class="menu">
+            <li>Game Mode</li>
+            <li>Arcade <span class="colorIcon red"></span></li>
+            <li>Multiplayer <span class="colorIcon orange"></span></li>
+            <li>Training <span class="colorIcon green"></span></li>
+          </ul>
+          <div class="addCategory"><span class="plus">+</span> </div>
+          <h1>Now Playing - Live score</h1>
+          <div><p>Ebenezer Abegunde: 19</p></div>
+          <div><p>Ogbole Gabriel: 17</p></div>
+        </div>
+        <div id="content">
+          <div id="titleBar">
+            <h2 style=" color: #fff; font-size: 17px;">Dashboard</h2>
+            <a href="/index.html" ><h2 style="margin-left:5px; color: #fff; font-size: 17px;" class="vl">Home</h2></a> 
+            <a href="/dashboard.html"  ><h2 style="margin-left:5px; color: #fff; font-size: 17px;" class="vl">V-Skip Tech</h2></a>
+            <a href="/dashboard2.html" ><h2 style="margin-left:5px; color: #fff; font-size: 17px;" class="vl">Smart Skating</h2></a>
+          <div id="profilePic">
+              <img src="/images/ogbole2.JPG" />
+            </div>
+            
+            <span class="controls activeControl">Weekly</span>
+            <span class="controls">Monthly</span>
+            <img src="/images/tennis.png" alt="" height="109px" width="109px">
+          </div>
+          <p style="margin-left: 80%; color: #fff;">Ogbole Gabriel Lv.45</p> 
+          
+          <div class="mainChart">
+            
+            <canvas id="salesData"></canvas>
+            <h2></h2>
+
+            <div class="cards-list">
+              <h1 style="color: #fff; font-weight: 400;">Total Time Spent</h1>
+              <div class="card 1">
+                <div class="card_image"> <img src="/images/rack.gif"> </div>
+                <div class="card_title title-white">
+                  <p style="color: #000;">Monday</p>
+                </div>
+                <p style="color:#fff; margin-top: 30px;">38min 57s</p>
+              </div>
+            
+              <div class="card 2">
+                
+                <div class="card_image">
+                  <img src="/images/rack.gif" />
+                </div>
+                
+                <div class="card_title title-white">
+                  
+                  <p style="color: #000;">Tuesday</p>
+                </div>
+                <p style="color:#fff;  margin-top: 30px;" >30min 12s</p>
+                
+              </div>
+            
+              <div class="card 3">
+                <div class="card_image">
+                  <img src="/images/rack.gif" />
+                </div>
+                <div class="card_title">
+                  <p>Wednesday</p>
+                </div>
+                <p style="color:#fff;  margin-top: 30px;" >35min 9s</p>
+              </div>
+            
+              <div class="card 4">
+                <div class="card_image">
+                  <img src="/images/rack.gif" />
+                </div>
+                <div class="card_title title-black">
+                  <p>Thursday</p>
+                </div>
+                <p style="color:#fff;  margin-top: 30px;">25min 30s</p>
+              </div>
+
+              <div class="card 4">
+                <div class="card_image">
+                  <img src="/images/rack.gif" />
+                </div>
+                <div class="card_title title-black">
+                  <p>Friday</p>
+                </div>
+                <p style="color:#fff;  margin-top: 30px;">22min 53s</p>
+              </div>
+
+              <div class="card 4">
+                <div class="card_image">
+                  <img src="/images/rack.gif" />
+                </div>
+                <div class="card_title title-black">
+                  <p>Saturday</p>
+                </div>
+                <p style="color:#fff;  margin-top: 30px;">55min 53s</p>
+              </div>
+            
+              <div class="card 4">
+                <div class="card_image">
+                  <img src="/images/rack.gif" />
+                </div>
+                <div class="card_title title-black">
+                  <p>Sunday</p>
+                </div>
+                <p style="color:#fff;  margin-top: 30px;">20min 9s</p>
+              </div>
+            </div>
+            <div class="clearFix"></div>
+           
+            
+            <h1 style="margin-left: 45%; font-weight: 300; color: #fff; font-size: 22px; background:linear-gradient( 135deg, rgba(51, 98, 123, 1) 100% ); border-radius: 30%; margin-top: 30px;" >Player Rating</h1>
+            <div id="totalSales">
+              <div class="col">
+                <div id="creditSales" class="progressBar"></div>
+                <img src="/images/65.png" alt="" height="50px" width="50px">
+                <h3>65%</h3>
+                <span class="progressTitle" style="color: #e9ebe4d0;">Backhand</span>
+              </div>
+              <div class="col">
+                <div id="channelSales" class="progressBar"></div>
+                <img src="/images/89.png" alt="" height="50px" width="60px">
+                <h3>89%</h3>
+                <span class="progressTitle" style="color: #e9ebe4d0;">Fronthand</span>
+              </div>
+              <div class="col">
+                <div id="directSales" class="progressBar"></div>
+                <img src="/images/90.png" alt="" height="50px" width="50px">
+                <h3>90%</h3>
+                <span class="progressTitle" style="color: #e9ebe4d0;">Serve</span>
+              </div>
+              <div class="col">
+                <div id="directSales" class="progressBar"></div>
+                <img src="/images/95.png" alt="" height="70px" width="70px">
+                <h3>95%</h3>
+                <span class="progressTitle" style="color: #e9ebe4d0;">Attack</span>
+              </div>
+              <div class="col">
+                <div id="directSales" class="progressBar"></div>
+                <img src="/images/85-removebg-preview.png" alt="" height="72px" width="77px">
+                <h3>85%</h3>
+                <span class="progressTitle" style="color: #e9ebe4d0;">Speed</span>
+              </div>
+              <div class="col">
+                <div id="directSales" class="progressBar"></div>
+                <img src="/images/65.png" alt="" height="50px" width="50px">
+                <h3>65%</h3>
+                <span class="progressTitle" style="color: #e9ebe4d0;">Technique</span>
+              </div>
+            </div>
+      
+            <table>
+              <tr>
+                <th>Leadboard</th>
+                <th>Wins</th>
+                <th>Lost</th>
+                <th>Level</th>
+              </tr>
+      
+              <tr>
+                <td style="color: #e9ebe4d0;">Ebenezer Abegunde</td>
+                <td style="color: #e9ebe4d0;">59</td>
+                <td style="color: #e9ebe4d0;">3</td>
+                <td style="color: #e9ebe4d0;">Lv. 59</td>
+              </tr>
+              
+              <tr>
+                <td style="color: #e9ebe4d0;">Marvelous Valentine</td>
+                <td style="color: #e9ebe4d0;">55</td>
+                <td style="color: #e9ebe4d0;">3</td>
+                <td style="color: #e9ebe4d0;">Lv. 53</td>
+              </tr>
+      
+              <tr>
+                <td style="color: #e9ebe4d0;">Ogobole Gabriel</td>
+                <td style="color: #e9ebe4d0;">49</td>
+                <td style="color: #e9ebe4d0;">4</td>
+                <td style="color: #e9ebe4d0;">Lv. 45</td>
+              </tr>
+      
+              <tr>
+                <td style="color: #e9ebe4d0;">Victory Alamezie</td>
+                <td style="color: #e9ebe4d0;">47</td>
+                <td style="color: #e9ebe4d0;">6</td>
+                <td style="color: #e9ebe4d0;">Lv. 42</td>
+              </tr>
+      
+              <tr>
+                <td style="color: #e9ebe4d0;">Obodo Ivy</td>
+                <td style="color: #e9ebe4d0;">28</td>
+                <td style="color: #e9ebe4d0;">10</td>
+                <td style="color: #e9ebe4d0;">Lv. 30</td>
+              </tr>
+
+              <tr>
+                <td style="color: #e9ebe4d0;">Ogbole Favour</td>
+                <td style="color: #e9ebe4d0;">22</td>
+                <td style="color: #e9ebe4d0;">16</td>
+                <td style="color: #e9ebe4d0;">Lv. 28</td>
+              </tr>
+
+              <tr>
+                <td style="color: #e9ebe4d0;">Odomugu Clement</td>
+                <td style="color: #e9ebe4d0;">20</td>
+                <td style="color: #e9ebe4d0;">19</td>
+                <td style="color: #e9ebe4d0;">Lv. 22</td>
+              </tr>
+
+            </table>
+          </div>
+      
+        </div>
+      </div>
+      </div>
+</body>
+</html>
