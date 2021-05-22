@@ -26,6 +26,7 @@ body {
 .margin {
   margin: 0 !important;
 }
+
 </style>
   
 </head>
@@ -72,8 +73,15 @@ body {
         </div>
         <div class="row">
           <div class="input-field col s12">
-            <a href="register.html" class="btn waves-effect waves-light col s12" style="background: green;">Register Now</a>
+            <a href="register.html " onclick="myFunction()" id="cd" class="btn waves-effect waves-light col s12" style="background: green;">Register Now</a>
           </div>
+       
+          <script>
+          function myFunction() {
+            alert("Not Available In Your Zone");
+            
+          }
+          </script>
           
           <div class="input-field col s12">
             <p class="margin center medium-small sign-up">Already have an account? <a href="login.html" style="color: green">Login</a></p>
