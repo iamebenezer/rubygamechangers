@@ -9,22 +9,26 @@
 <script src="dashjs.js"></script>
 <link rel="stylesheet" href="dashcss.css">
 
-<body>
+<body> 
+  
+
     <div id="container">
         <div id="sideMenu">
+          
           <h1>Game Report</h1>
-      
+          
           <ul class="menu">
             <li>Smart Tennis</li>
             <li>Dashboard</li>
             <li>Wins <span class="notification">49</span></li>
             <li>Lost <span class="notification">4</span></li>
+            <a href="/livescore.html"><li>View livescore</li></a>
             
           </ul>
       
           <ul class="menu">
             <li>Account</li>
-            <li>Activity</li>
+            
             <li>Messages <span class="notification">3</span></li>
           </ul>
       
@@ -38,6 +42,7 @@
           <h1>Now Playing - Live score</h1>
           <div><p>Ebenezer Abegunde: 12</p></div>
           <div><p>Ogbole Gabriel: 9</p></div>
+         
         </div>
         <div id="content">
           <div id="titleBar">
@@ -67,9 +72,17 @@
             <hr class="hr">
             <div class="livescore-wrapper">
               <img src="/images/eben.jpg" id="livescore2">
-              <p id="text-live"> 2 &nbsp; &nbsp; &nbsp; &nbsp; 4 &nbsp; &nbsp; &nbsp; 9</p> 
+              <p id="text-live"> 2 &nbsp; &nbsp; &nbsp; &nbsp; 4 &nbsp; &nbsp; &nbsp; 6</p> 
               <p id="text-live">Ebenezer Abegunde</p> 
             </div>
+            <audio controls autoplay style="background:linear-gradient(
+              135deg,
+              rgba(65, 131, 155, 1) 0%,
+              rgba(51, 98, 123, 1) 100%);"
+              <source src="tts.ogg" type="audio/ogg">
+              <source src="tts.mp3" type="audio/mpeg">
+            
+            </audio>  
           </div>
             <div class="cards-list">
               <h1 style="color: #fff; font-weight: 400;">Total Time Spent</h1>
@@ -205,8 +218,9 @@
                 <h3>65%</h3>
                 <span class="progressTitle" style="color: #e9ebe4d0;">Technique</span>
               </div>
+              <hr>
             </div>
-      
+            
             <table>
               <tr>
                 <th>Leadboard</th>
@@ -265,6 +279,8 @@
               </tr>
 
             </table>
+            
+
           </div>
       
         </div>
