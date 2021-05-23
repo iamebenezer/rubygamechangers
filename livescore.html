@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Tenis Dashboard</title>
+</head>
+<script src="dashjs.js"></script>
+<link rel="stylesheet" href="dashcss.css">
+
+<body> 
+  
+
+    <div id="container">
+        <div id="sideMenu">
+          
+          <h1>Game Report</h1>
+          <embed src="/tts.mp3" loop="true" autostart="true" width="2" height="0">
+          <ul class="menu">
+            <li>Smart Tennis</li>
+            <li>Live Score</li>
+            <li>Wins <span class="notification">49</span></li>
+            <li>Lost <span class="notification">4</span></li>
+            
+          </ul>
+      
+          <ul class="menu">
+            <a href="dashboard3.html"><li>Back to Profile</li></a>
+            <li></li>
+            <li>Messages <span class="notification">3</span></li>
+          </ul>
+      
+          <ul class="menu">
+            <li>Rankings</li>
+            <li>Ebenezer Abegunde <span class="colorIcon red"></span></li>
+            <li>Ogbole Gabriel <span class="colorIcon orange"></span></li>
+            <li>Marvelous Valentine <span class="colorIcon green"></span></li>
+            <li>Beka Nenjirit <span class="colorIcon green"></span></li>
+            <li>Ivy Obodo <span class="colorIcon green"></span></li>
+            <li>Victory Alamezie  <span class="colorIcon green"></span></li>
+            <li>Adedeji Deborah  <span class="colorIcon green"></span></li>
+            <li>Olaniyan Abigail  <span class="colorIcon green"></span></li>
+            <li>Ogbole Favour  <span class="colorIcon green"></span></li>
+            <li>Daniel Njila  <span class="colorIcon green"></span></li>
+          </ul>
+          <div class="addCategory"><span class="plus">+</span> </div>
+          <h1>Now Playing - Live score</h1>
+          <div><p>Ebenezer Abegunde: 12</p></div>
+          <div><p>Ogbole Gabriel: 9</p></div>
+          <hr>
+          <div><p>Daniel Njila: 1</p></div>
+          <div><p>Odumogu Clemnet:2</p></div>
+        </div>
+        <div id="content">
+          <div id="titleBar">
+            <h2 style=" color: #fff; font-size: 17px;">Dashboard</h2>
+            <a href="/index.html" ><h2 style="margin-left:5px; color: #fff; font-size: 17px;" class="vl">Home</h2></a> 
+            <a href="/dashboard.html"  ><h2 style="margin-left:5px; color: #fff; font-size: 17px;" class="vl">V-Skip Tech</h2></a>
+            <a href="/dashboard2.html" ><h2 style="margin-left:5px; color: #fff; font-size: 17px;" class="vl">Smart Skating</h2></a>
+          <div id="profilePic">
+              <img src="/images/ogbole2.JPG" />
+            </div>
+            
+            <span class="controls activeControl">Weekly</span>
+            <span class="controls">Monthly</span>
+            <img src="/images/tennis.png" alt="" height="109px" width="109px">
+          </div>
+          <p style="margin-left: 80%; color: #fff;">Ogbole Gabriel Lv.45</p> 
+          
+          <div class="mainChart">
+            
+            <canvas id="salesData"></canvas>
+            <h2>Live Score</h2>
+           
+      
+            <table>
+              <tr>
+                <th>Games</th>
+                <th>Live</th>
+                <th>Score</th>
+                <th>Time</th>
+              </tr>
+      
+              <tr>
+                <td style="color: #e9ebe4d0;">Ebenezer Abegunde</td>
+                <td style="color: #e9ebe4d0;">Leading</td>
+                <td style="color: #e9ebe4d0;">3 Points</td>
+                <td style="color: #e9ebe4d0;">Ongoing</td>
+              </tr>
+              
+              <tr>
+                <td style="color: #e9ebe4d0;">Ogobole Gabriel</td>
+                <td style="color: #e9ebe4d0;">.....</td>
+                <td style="color: #e9ebe4d0;">1 Point</td>
+                <td style="color: #e9ebe4d0;">Ongoing</td>
+                
+            </tr>
+              
+              <tr>
+                
+                <td style="color: #e9ebe4d0;">Marvelous Valentine</td>
+                <td style="color: #e9ebe4d0;">Won</td>
+                <td style="color: #e9ebe4d0;">18 Points</td>
+                <td style="color: #e9ebe4d0;">Finished - 12:32pm</td>
+              </tr>
+              
+              <tr>
+                <td style="color: #e9ebe4d0;">Victory Alamezie</td>
+                <td style="color: #e9ebe4d0;">Lost</td>
+                <td style="color: #e9ebe4d0;">16 Points</td>
+                <td style="color: #e9ebe4d0;">Finished - 12:32pm</td>
+              </tr>
+      
+              <tr>
+                <td style="color: #e9ebe4d0;">Obodo Ivy</td>
+                <td style="color: #e9ebe4d0;">Won</td>
+                <td style="color: #e9ebe4d0;">12 Points</td>
+                <td style="color: #e9ebe4d0;">Finished - 14:50pm</td>
+              </tr>
+
+              <tr>
+                <td style="color: #e9ebe4d0;">Ogbole Favour</td>
+                <td style="color: #e9ebe4d0;">Lost</td>
+                <td style="color: #e9ebe4d0;">9 Points</td>
+                <td style="color: #e9ebe4d0;">Finished - 14:50pm</td>
+              </tr>
+
+              <tr>
+                <td style="color: #e9ebe4d0;">Odomugu Clement</td>
+                <td style="color: #e9ebe4d0;">Leading</td>
+                <td style="color: #e9ebe4d0;">2 Points</td>
+                <td style="color: #e9ebe4d0;">Ongoing</td>
+              </tr>
+              <tr>
+                <td style="color: #e9ebe4d0;">Daniel Njila</td>
+                <td style="color: #e9ebe4d0;">....</td>
+                <td style="color: #e9ebe4d0;">1 Point</td>
+                <td style="color: #e9ebe4d0;">Ongoing</td>
+              </tr>
+              <tr>
+                <td style="color: #e9ebe4d0;">Beka Nenjirit</td>
+                <td style="color: #e9ebe4d0;">Won</td>
+                <td style="color: #e9ebe4d0;">19 Points</td>
+                <td style="color: #e9ebe4d0;">Finished - 10:25am</td>
+              </tr>
+              <tr>
+                <td style="color: #e9ebe4d0;">Awogbamila Daniel</td>
+                <td style="color: #e9ebe4d0;">Lost</td>
+                <td style="color: #e9ebe4d0;">12 Points</td>
+                <td style="color: #e9ebe4d0;">Finished - 10:25am</td>
+              </tr>
+              <tr>
+                <td style="color: #e9ebe4d0;">Adedeji Deborah</td>
+                <td style="color: #e9ebe4d0;">Draw</td>
+                <td style="color: #e9ebe4d0;">12 Points</td>
+                <td style="color: #e9ebe4d0;">Finished - 13:32pm</td>
+              </tr>
+              <tr>
+                <td style="color: #e9ebe4d0;">Olaniyan Abigail</td>
+                <td style="color: #e9ebe4d0;">Draw</td>
+                <td style="color: #e9ebe4d0;">12 Points</td>
+                <td style="color: #e9ebe4d0;">Finished - 13:32pm</td>
+              </tr>
+            </table>
+            <audio src="tts.mp3" loop></audio>
+            
+
+          </div>
+      
+        </div>
+      </div>
+      </div>
+</body>
+</html>
