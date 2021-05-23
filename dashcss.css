@@ -82,6 +82,7 @@ body {
   margin-bottom: 30px;
   
 }
+
 #profilePic {
   width: 89px;
   height: 80px;
@@ -94,6 +95,47 @@ body {
 }
 #profilePic img {
   width: 100%;
+}
+
+.hr{
+  position: relative;
+  top: -190px;
+  width: 28%;
+  margin-left: -2%;
+}
+#livescore{
+  width: 30px;
+  height: 30px;
+  border-radius: 80%;
+  background: #999;
+  float: right;
+  margin-top: -19px;
+  margin-left: 14px;
+  overflow: hidden;
+  position: relative;
+  top: -180px;
+  left: -900px;
+  background-color: #000;
+}
+#livescore2{
+  width: 30px;
+  height: 30px;
+  border-radius: 80%;
+  background: #999;
+  float: right;
+  margin-top: -19px;
+  margin-left: 14px;
+  overflow: hidden;
+  position: relative;
+  top: -150px;
+  left: -900px;
+  background-color: #000;
+}
+#text-live{
+  position: relative;
+  top: -195px;
+  left: 19px;
+  color: #fff;
 }
 .controls {
   display: block;
