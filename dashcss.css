@@ -363,12 +363,12 @@ h3 {
   }
   .form-wrapper{
     background-color: rgba(142, 142, 235, 0.205);
-    width:400px ;
+    width:450px ;
     height:802px ;
     margin: auto;
     position: relative;
     top: -150px;
-    box-shadow:19px 18px 17px 12px rgb(8, 28, 43);
+    box-shadow:3px 3px 3px 2px rgb(29, 138, 56);
     border-radius: 8px;
     
   }
@@ -379,12 +379,12 @@ h3 {
   input{
     position: relative;
     top:35px;
-    width: 30%;
+    width: 40%;
     padding: 5px;
     margin: 18px;
     border-radius: 9px;
     border: none;
-    border: 2px solid #000;
+    border: 2px solid rgb(47, 151, 47);
     color: #000;
 
 
@@ -392,13 +392,13 @@ h3 {
   }
   .btn{
    margin-top: 50px;
-   margin-left: 135px;
-   width: 100px;
+   margin-left: 130px;
+   width: 200px;
    border: none;
    padding: 10px;
    border-radius: 8px;
    border: 1px solid #000;
-   box-shadow: 1px 1px 1px 1px #202b33;
+   box-shadow: 1px 1px 1px 1px #247740;
   }
   @media only screen and (min-width: 599px) and (max-width: 767px) {
   #container{
