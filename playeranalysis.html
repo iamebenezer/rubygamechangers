@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Tenis Dashboard</title>
+</head>
+<script src="dashjs.js"></script>
+<link rel="stylesheet" href="dashcss.css">
+
+
+<body> 
+  
+
+    <div id="container">
+        <div id="sideMenu">
+          
+          <h1>Game Report</h1>
+          
+          <ul class="menu">
+            <li>Smart Tennis</li>
+            <a href="/dashboard3.html"><li>Dashboard</li></a>
+            <li>Wins <span class="notification">49</span></li>
+            <li>Lost <span class="notification">4</span></li>
+            <a href="/livescore.html"><li>View livescore</li></a>
+            
+          </ul>
+      
+          <ul class="menu">
+            <li>Account</li>
+            
+            <li>Messages <span class="notification">3</span></li>
+          </ul>
+          <ul class="menu">
+            
+            <li style="color: #fff;">Points Played</li>
+            
+            <li>Points Won <span class="notification">49</span></li>
+            <li>Points Lost <span class="notification">4</span></li>
+            </ul>
+          
+            
+
+          </div>
+
+        <div id="content">
+          <div id="titleBar">
+            <h2 style=" color: #fff; font-size: 17px;">Dashboard</h2>
+            <a href="/index.html" ><h2 style="margin-left:5px; color: #fff; font-size: 17px;" class="vl">Home</h2></a> 
+            <a href="/dashboard.html"  ><h2 style="margin-left:5px; color: #fff; font-size: 17px;" class="vl">V-Skip Tech</h2></a>
+            <a href="/dashboard2.html" ><h2 style="margin-left:5px; color: #fff; font-size: 17px;" class="vl">Smart Skating</h2></a>
+          <div id="profilePic">
+              <img src="/images/ogbole2.JPG" />
+            </div>
+            
+            <span class="controls activeControl">Weekly</span>
+            <span class="controls">Monthly</span>
+            <img src="/images/tennis.png" alt="" height="109px" width="109px">
+          </div>
+          <p style="margin-left: 80%; color: #fff;">Ogbole Gabriel Lv.45</p> 
+          
+          <div class="mainChart">
+            
+            <canvas id="salesData"></canvas>
+            <form class="form-wrapper" method="GET">
+      
+                <div>
+                    <h2 style="margin-left: 110px; position: relative;
+                    top: 10px; font-weight: 600;">Player Analysis</h2>
+                    <div>
+                      <input id="username" type="name" name="username" placeholder="Username">
+                    </div>
+                    <div>
+                    <input type="number" name="fullname" placeholder="Points Played">
+                    <input type="number" name="username" placeholder="Points Won">
+                </div>
+                
+                <div>
+
+                    <input type="number" name="email" placeholder="Points Lost">
+                    <input  type="number" name="password" placeholder="Short Serves">
+                </div>
+                
+                <div>
+
+                    <input  type="number" name="confirm-password" placeholder="Long Serves">
+                    <input type="number" name="username" placeholder="Long Fast Serves">
+                  </div>
+                <div>
+                 
+                <div>
+
+                    <input type="number" name="email" placeholder="Short Back Spin">
+                    <input  type="number" name="password" placeholder="Short Side Spin">
+                </div>
+              
+                <div>
+
+                    <input  type="number" name="confirm-password" placeholder="Short Float">
+                    <input type="number" name="username" placeholder="Short Topspin">
+                </div>
+                
+              <div>
+
+                  <input type="number" name="email" placeholder="Service Error">
+                  <input  type="number" name="password" placeholder="Points Won on service">
+              </div>
+            
+              <div>
+
+                  <input  type="number" name="confirm-password" placeholder="Forehand">
+                  <input  type="number" name="password" placeholder="Backhand">
+              </div>
+             
+            <div>
+
+                <input  type="number" name="confirm-password" placeholder="Flick">
+                <input  type="number" name="password" placeholder="Forehand Error">
+            </div>
+           
+          <div>
+
+              <input  type="number" name="confirm-password" placeholder="Backsand Error">
+          </div>
+        
+                <div>
+                    
+                  <button class="btn" onclick="myFunction()">Analyse</button>
+                  <script>
+                      function myFunction() {
+            alert("You're Not Eligible To Get Your Analysis Now!");
+            
+          }
+                  </script>
+                  </div>
+            </form>
+          
+
+          </div>
+      
+        </div>
+      </div>
+      </div>
+</body>
+</html>
