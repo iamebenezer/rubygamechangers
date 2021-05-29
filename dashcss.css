@@ -7,11 +7,7 @@ html {
 body {
   height: 100%;
   margin: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(65, 131, 155, 1) 0%,
-    rgba(51, 98, 123, 1) 100%
-  );
+ background: rgb(146, 144, 144);
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -362,14 +358,19 @@ h3 {
     }
   }
   .form-wrapper{
-    background-color: rgba(142, 142, 235, 0.205);
+    background: rgb(217,34,160);
+    background: linear-gradient(90deg, rgba(217,34,160,1) 11%, rgba(128,68,130,0.5242296747800683) 37%, rgba(36,20,31,1) 100%);
+    
+    position: relative;
+    top: -200px;
     width:450px ;
-    height:802px ;
+    height:832px ;
     margin: auto;
     position: relative;
     top: -150px;
-    box-shadow:3px 3px 3px 2px rgb(29, 138, 56);
+    box-shadow:3px 3px 3px 2px rgb(245, 243, 243);
     border-radius: 8px;
+    margin-bottom: auto;
     
   }
   #username{
@@ -413,7 +414,11 @@ h3 {
     width: 10px;
   }
   }
-  
+  @media only screen and (min-width:599px) and (max-width:767px){
+    .form-wrapper{
+      margin-top: 500px;
+    }
+  }
   /*
   .card {
     margin: 30px auto;
