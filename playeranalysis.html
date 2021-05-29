@@ -3,72 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Smart Tenis Dashboard</title>
 </head>
 <script src="dashjs.js"></script>
 <link rel="stylesheet" href="dashcss.css">
 <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
-
+<style>
+    @-ms-viewport{
+  width: device-width;
+}
+</style>
 
 <body> 
   
 
-    <div id="container">
-        <div id="sideMenu">
-          
-          <h1>Game Report</h1>
-          
-          <ul class="menu">
-            <li>Smart Tennis</li>
-            <a href="/dashboard3.html"><li>Dashboard</li></a>
-            <li>Wins <span class="notification">49</span></li>
-            <li>Lost <span class="notification">4</span></li>
-            <a href="/livescore.html"><li>View livescore</li></a>
-            
-          </ul>
-      
-          <ul class="menu">
-            <li>Account</li>
-            
-            <li>Messages <span class="notification">3</span></li>
-          </ul>
-          <ul class="menu">
-            
-            <li style="color: #fff;">Points Played</li>
-            
-            <li>Points Won <span class="notification">49</span></li>
-            <li>Points Lost <span class="notification">4</span></li>
-            </ul>
-          
+    
             
 
           </div>
-
-        <div id="content">
-          <div id="titleBar">
-            <h2 style=" color: #fff; font-size: 17px;">Dashboard</h2>
-            <a href="/index.html" ><h2 style="margin-left:5px; color: #fff; font-size: 17px;" class="vl">Home</h2></a> 
-            <a href="/dashboard.html"  ><h2 style="margin-left:5px; color: #fff; font-size: 17px;" class="vl">V-Skip Tech</h2></a>
-            <a href="/dashboard2.html" ><h2 style="margin-left:5px; color: #fff; font-size: 17px;" class="vl">Smart Skating</h2></a>
-          <div id="profilePic">
-              <img src="/images/ogbole2.JPG" />
-            </div>
-            
-            
           
-          <div class="mainChart">
-            
-            <canvas id="salesData"></canvas>
-            <form class="form-wrapper" method="GET">
-      
+        
+           
+          
+         
+   
+            <form class="form-wrapper" method="GET"  style="margin-top: 30%;">
+           
                 <div>
+            
+                    
+                    <p style="color: #fff; font-weight: 600; margin-left: 20%;">Input Player Game Start To Analyse</p>
                     <h2 style="margin-left: 110px; position: relative;
-                    top: 10px; font-weight: 600;">Player Analysis</h2>
+                    top: 10px; font-weight: 600; margin-left: 10%;">Table Tennis Player Analytical App</h2>
+                    
                     <div>
-                      <input id="username" type="name" name="username" placeholder="Player Name">
-                    </div>
-                    <div>
+                        
+                     
+                        <input id="username" type="name" name="username" placeholder="Player Name">
                     <input type="number" name="fullname" placeholder="Games Played">
                     <input type="number" name="username" placeholder="Points Won">
                 </div>
@@ -126,7 +98,7 @@
                   <button class="btn" onclick="myFunction()">Analyse Player Performance</button>
                   <script>
                       function myFunction() {
-            alert("You're Not Eligible To Get Your Analysis Now!");
+            alert("You're Not Eligible To Get Your Analysis Now!. Contact F.G.C Rubochi Coding Club. ");
             
           }
                   </script>
